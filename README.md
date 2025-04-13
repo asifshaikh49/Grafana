@@ -30,3 +30,5 @@ This project demonstrates the setup of a centralized log monitoring and visualiz
 ```bash
 ssh -i <your-key>.pem ubuntu@<your-ec2-public-ip>
 
+### **Install NGINX, Docker, Grafana**#
+
