@@ -1,6 +1,45 @@
 # Log Monitoring with NGINX, Promtail, Loki & Grafana
 
+## 📄 Prepared by
+**Asifahmed Hussain Shaikh**  
+
+
+---
+
+## 🚀 Overview
+
+This project demonstrates how to set up a centralized log monitoring and visualization system using:
+
+- **NGINX** (Web server)
+- **Promtail** (Log shipper)
+- **Loki** (Log aggregator)
+- **Grafana** (Dashboard)
+
+All components are installed and configured on an **AWS EC2 instance** using **Docker** wherever applicable.
+
+---
+
+## 🧱 Architecture Workflow
+
+1. Launch EC2 instance on AWS
+2. Install and configure NGINX
+3. Open Port 80 in EC2 security group
+4. Install Grafana (access on port 3000)
+5. Install Docker
+6. Run Loki and Promtail in Docker
+7. Set up dashboards in Grafana to view logs from NGINX
+
+---
+
 ## ⚙️ Step-by-Step Setup
+
+### 1. Launch EC2 Instance
+Use Ubuntu or any Linux-based AMI.
+
+### 2. Connect via SSH
+```bash
+ssh -i "your-key.pem" ubuntu@your-ec2-public-ip
+
 
 ### 3. Install & Start NGINX
 ```bash
