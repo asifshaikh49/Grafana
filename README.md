@@ -124,7 +124,6 @@ docker run -d --name=promtail   -v /var/log:/var/log   -v $(pwd)/promtail-docker
 ```
 
 ```
-103.195.83.125 - - [08/Apr/2025:14:20:26 +0000] "GET /app HTTP/1.1" 404 196 "-" "Mozilla/5.0 ..."
 ```
 
 ---
