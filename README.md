@@ -30,5 +30,21 @@ This project demonstrates the setup of a centralized log monitoring and visualiz
 ```bash
 ssh -i <your-key>.pem ubuntu@<your-ec2-public-ip>
 
-### **Install NGINX, Docker, Grafana**#
+### 🌐 Step 3: Install and Start NGINX
+
+NGINX is used to generate access logs which we will monitor.
+
+```bash
+# Update package list
+sudo apt update
+
+# Install NGINX
+sudo apt install nginx -y
+
+# Enable NGINX to start on boot
+sudo systemctl enable nginx
+
+# Start NGINX service
+sudo systemctl start nginx
+
 
